@@ -1,6 +1,4 @@
 syntax = "proto3";
-
-// The package specifier 
 package product;
 
 // service definition
@@ -15,7 +13,7 @@ service ProducService {
 // message type definitions
 message Empty {}
 
-message ProductList{
+message ProductList {
   repeated Product products = 1;
 }
 
