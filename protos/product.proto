@@ -2,12 +2,12 @@ syntax = "proto3";
 package product;
 
 // service definition
-service ProducService {
-  rpc listProducts (Empty) returns (ProductList) {}
-  rpc readProduct (ProductId) returns (Product) {}
-  rpc createProduct (newProduct) returns (result) {}
-  rpc updateProduct (Product) returns (result) {}
-  rpc deleteProduct (ProductId) returns (result) {}
+service ProductService {
+  rpc listProducts(Empty) returns (ProductList) {}
+  rpc readProduct(ProductId) returns (Product) {}
+  rpc createProduct(newProduct) returns (result) {}
+  rpc updateProduct(Product) returns (result) {}
+  rpc deleteProduct(ProductId) returns (result) {}
 }
 
 // message type definitions
